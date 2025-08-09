@@ -1,0 +1,112 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Poppins',sans-serif;
+}
+
+h1,h2 {
+    font-family:sans-serif ;
+    font-weight: 400;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex_space {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    border: none;
+    background:none;
+    outline: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.primary-btn {
+    padding: 15px 40px;
+    background:#4259c1;
+    font-weight: bold;
+    color: white;
+}
+
+/*-----about-----*/
+.left {
+    width: 50%;
+    padding: 30px;
+}
+.right {
+    width: 50%;
+    margin-top: 12%;
+    padding: 30px;
+}
+.block1{
+    width: 30%;
+    height: 100%;
+    background-color: rgb(127, 152, 45);
+    padding: 30px;
+    display: inline-block;
+}
+.block2{
+    width: 30%;
+    height: 70%;
+    background-color: rgb(11, 114, 62);
+    padding: 30px;
+    display: inline-block;
+}
+.block3{
+    width: 30%;
+    height: 83%;
+    background-color: rgb(50, 112, 25);
+    padding: 30px;
+    display: inline-block;
+}
+.top {
+    margin-top: 80px;
+}
+.mtop{
+    margin-top: 40px;
+}
+
+.heading h1 {
+    font-size: 100px;
+    font-weight: 500;
+    opacity: 0.1;
+    font-family: serif;
+    position: absolute;
+    top: -30px;
+}
+
+.heading h2 {
+    margin: 30px 0;
+    font-size: 45px;
+    font-family: serif;
+    font-weight: 400;
+}
+
+.about .heading h1 {
+ top: 55px;
+}
+
+.about {
+position: relative;
+}
+
+.about .left{
+    margin-top: 30px;
+}
+
+.about p {
+    font-size: 15px;
+}
+.about button {
+    margin: 30px 0;
+}

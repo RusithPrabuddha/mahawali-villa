@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #fff;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            
+        }
+
+        .headtext h2 {
+            color: #222;
+            font-size: 36px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        .navlinks ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        .navlinks ul li {
+            display: inline-block;
+        }
+
+        .navlinks ul li a {
+            color: #000;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .navlinks ul li a:hover {
+            color: #007bff;
+        }
+
+        /* Section Heading */
+        .section-heading h1 {
+            font-size: 40px;
+            color: #222;
+            text-transform: uppercase;
+        }
+
+        .section-heading h2 {
+            font-size: 28px;
+            color: #007bff;
+            margin: 10px 0;
+        }
+
+        .section-heading p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        /* Room Carousel */
+        .owl-carousel .item {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .owl-carousel .item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .owl-carousel img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .room-info {
+            padding: 15px;
+        }
+
+        .room-info h2 {
+            font-size: 22px;
+            color: #333;
+        }
+
+        .rating {
+            font-size: 18px;
+            color: #ffcc00;
+            margin: 5px 0;
+        }
+
+        .room-info p {
+            font-size: 14px;
+            color: #555;
+            margin: 10px 0;
+        }
+
+        .room-info h3 {
+            font-size: 18px;
+            color: #007bff;
+            margin-top: 10px;
+        }
+
+        .room-info span {
+            font-size: 14px;
+            color: #777;
+        }
+
+        .select-btn {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .select-btn:hover {
+            background: #0056b3;
+        }
+
+        /* Owl Carousel Navigation */
+        .owl-theme .owl-nav [class*='owl-'] {
+            background: #007bff;
+            color: white;
+            font-size: 18px;
+            padding: 10px 15px;
+            border-radius: 50%;
+            transition: 0.3s;
+        }
+
+        .owl-theme .owl-nav [class*='owl-']:hover {
+            background: #0056b3;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .owl-carousel .item {
+                padding: 10px;
+            }
+
+            .navlinks ul {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="headtext">
+        <a href="indexx.html">
+            <h2>Mahawali Villa</h2>
+        </a>
+    </div>
+    <div class="navlinks">
+        <ul id="menulist">
+            <li><a href="indexx.html">HOME</a></li>
+            <li><a href="booknow.html">ROOMS</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+        </ul>
+    </div>
+</header>
+
+<section class="rooms-section">
+    <div class="container">
+        <div class="section-heading">
+            <h1>Explore</h1>
+            <h2>Our Rooms</h2>
+            <p>"Choose the room that speaks to your soul and makes you feel at home, for the best memories are made in the most comfortable spaces."</p>
+        </div>
+
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="Images/16.jpg" alt="Room 1">
+                <div class="room-info">
+                    <h2>ROOM 1</h2>
+                    <div class="rating">★★★★★</div>
+                    <p>Double Room with Roof Bed</p>
+                    <h3>3000 LKR <span>per night</span></h3>
+                    <button class="select-btn" onclick="location.href='guestdata.html'">Select</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="Images/17.jpg" alt="Room 2">
+                <div class="room-info">
+                    <h2>ROOM 2</h2>
+                    <div class="rating">★★★★★</div>
+                    <p>Double Room with Roof Bed</p>
+                    <h3>4000 LKR <span>per night</span></h3>
+                    <button class="select-btn" onclick="location.href='guestdata.html'">Select</button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Images/19.jpg" alt="Room 2">
+                <div class="room-info">
+                    <h2>Full Villa</h2>
+                    <div class="rating">★★★★★</div>
+                    <p>All Three Rooms with the Kitchen</p>
+                    <h3>15000 LKR <span>per night</span></h3>
+                    <button class="select-btn" onclick="location.href='guestdata.html'">Select</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            loop: true,
+            margin: 20,
+            nav: true,
+            dots: false,
+            navText: ["<", ">"],
+            responsive: {
+                0: { items: 1 },
+                768: { items: 2, margin: 10 },
+                1000: { items: 3 }
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

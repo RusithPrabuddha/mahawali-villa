@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html lang="en"dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahawali Villa</title>
+    <link rel="stylesheet" href="teststyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+  
+ 
+
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Header */
+        header {
+            background-color: #fff;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .headtext h2 {
+            color: #222;
+            font-size: 36px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            
+        }
+        a{
+            text-decoration: none;
+        }
+
+        .navlinks ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        .navlinks ul li a {
+            color: #000;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .navlinks ul li a:hover {
+            color: #f0f0f0;
+        }
+
+        /* Carousel */
+        .home {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .owl-carousel .item img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover; /* Full image, no zoom */
+        }
+
+        /* Text Box */
+        .text-box {
+            position: absolute;
+            top: 35%;
+            left: 5%;
+            max-width: 400px;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 25px;
+            border-radius: 12px;
+            backdrop-filter: blur(8px);
+            color: white;
+            text-align: left;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .text-box h1 {
+            font-size: 42px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #f8f9fa;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        .text-box p {
+            font-size: 18px;
+            color: #ddd;
+        }
+
+        .primary-btn, .secondary-btn {
+            padding: 10px 22px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: 0.3s;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .primary-btn {
+            background: #007bff;
+            color: white;
+        }
+
+        .secondary-btn {
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            border: 1px solid #fff;
+        }
+
+        .primary-btn:hover {
+            background: #0056b3;
+        }
+
+        .secondary-btn:hover {
+            background: #fff;
+            color: #000;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .text-box {
+                left: 5%;
+                max-width: 90%;
+                text-align: center;
+            }
+
+            .text-box h1 {
+                font-size: 30px;
+            }
+
+            .text-box p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="headtext">
+        <a href="indexx.html">
+            <h2>Mahawali Villa</h2>
+        </a>
+    </div>
+    <div class="navlinks">
+        <ul>
+            <li><a href="indexx.html">HOME</a></li>
+            <li><a href="booknow.html">ROOMS</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+        </ul>
+    </div>
+</header>
+
+<!-- Image Carousel -->
+<section class="home">
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <img src="Images/1.jpg" alt="Villa View 1">
+            <div class="text-box">
+                <h1>Spend Your Day</h1>
+                <p>With a fascinating view</p>
+                <div class="flex">
+                    <button class="secondary-btn" onclick="location.href='form.html'">CONTACT US</button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="Images/2.jpg" alt="Villa View 2">
+            <div class="text-box">
+                <h1>Relax & Enjoy</h1>
+                <p>Luxury stay with stunning scenery</p>
+                <div class="flex">
+                    
+                    <button class="secondary-btn" onclick="location.href='form.html'">CONTACT US</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- jQuery and Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            loop: true, /* Infinite looping */
+            margin: 0,
+            nav: false, /* Disable navigation arrows */
+            dots: false, /* Remove dots */
+            autoplay: true, /* Enable auto-slide */
+            autoplayTimeout: 5000, /* 5 seconds per slide */
+            autoplayHoverPause: true, /* Pause on hover */
+            animateOut: 'fadeOut', /* Animation for slide out */
+            items: 2
+        });
+    });
+</script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:0,
+        nav:false,
+        dots:false,
+        navText: ["<li class= 'fa fa-chevron-left'></li>","<i class = 'fa fa-chevron-right'></i>"],
+        responsive:{
+            0:{
+                items:1
+            },
+            768:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    })
+    </script>
+
+
+
+    <section class="book">
+        <div class="containeer flex_space">
+            <div class="text">
+                <h1><span>BOOK</span> Your Rooms</h1>
+            </div>
+            <div class="form">
+              
+                <form class="grid" action="booknow.html" >
+                    <input type="date" placeholder="Araival Date" name="checkIn">
+                    <input type="date" placeholder="Departure Date" name="checkOut">
+                    <input type="number" placeholder="Persons" name="persons" value="Persons">
+                    <!-- <input type="submit" placeholder="CHECK AVAILABILIYY" value="BOOK NOW"> -->
+                    <button class="primary-btn" onclick="location.href='aboutus.html'">BOOK NOW</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <!-- Left Side: Text -->
+                <div class="about-text">
+                    <h1>WELCOME</h1>
+                    <h2>MAHAWALI VILLA</h2>
+                    <p class="tagline"><i>May all who enter as guests, leave as friends...</i></p>
+                    <p>In a prime location in Kandy, Mahawali Villa is a recently built villa that offers rooms with free WiFi and private parking.</p>
+                    <button class="btn-primary" onclick="location.href='aboutus.html'">ABOUT US</button>
+                </div>
+                
+                <!-- Right Side: Image -->
+                <div class="about-image">
+                    <img src="Images/3.jpg" alt="Mahawali Villa">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <!-- Left Side: Text -->
+                <div class="about-text">
+                    <h1>ROOM VIEW</h1>
+                    <h2>Virtual Tour</h2>
+                    <p>Explore our spaces like never before! Take a 360° Virtual Tour and experience every room in stunning detail—right from your screen. Click to start your immersive journey!</p>
+                    <button class="btn-primary" onclick="location.href='https://kuula.co/share/collection/7lRNF?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1'">VIEW</button>
+                </div>
+                
+                <!-- Right Side: Image -->
+                <div class="about-image">
+                    <img src="Images/VR.jfif" alt="Mahawali Villa">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+    
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+        }
+    
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 50px 0;
+        }
+    
+        /* About Section */
+        .about-section {
+            background: white;
+            padding: 60px 0;
+        }
+    
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+    
+        /* Left Side - Text */
+        .about-text {
+            flex: 1;
+        }
+    
+        .about-text h1 {
+            font-size: 40px;
+            color: #222;
+            text-transform: uppercase;
+        }
+    
+        .about-text h2 {
+            font-size: 28px;
+            color: #007bff;
+            margin: 10px 0;
+        }
+    
+        .tagline {
+            font-size: 18px;
+            color: #555;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+    
+        .about-text p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #444;
+            margin-bottom: 20px;
+        }
+    
+        /* Button */
+        .btn-primary {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+    
+        .btn-primary:hover {
+            background: #0056b3;
+        }
+    
+        /* Right Side - Image */
+        .about-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+    
+        .about-image img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .about-content {
+                flex-direction: column;
+                text-align: center;
+            }
+    
+            .about-image {
+                margin-top: 20px;
+            }
+        }
+    </style>
+    
+
+<!-- <section class="counter top">
+    <div class="container grid">
+        <div class="box">
+         <h1>2000+</h1>
+          <hr>
+          <span>Customers</span>      
+        </div>
+        <div class="box">
+         <h1>1500+</h1>
+          <hr>
+          <span>Happy Customers</span>      
+        </div>    
+        <div class="box">
+         <h1>100+</h1>
+          <hr>
+          <span>Travelling Destinations</span>      
+        </div>    
+            <div class="box">
+             <h1>50+</h1>
+              <hr>
+              <span>Facilities</span>      
+            </div>
+         </div>  
+</section> -->
+
+
+<section class="rooms-section" id="rooms">
+    <div class="container">
+        <div class="section-heading">
+            <h1>Explore</h1>
+            <h2>Our Rooms</h2>
+            <p>"Choose the room that speaks to your soul and makes you feel at home, for the best memories are made in the most comfortable spaces."</p>
+        </div>
+
+        <div class="rooms-grid">
+            <a href="guestdata.html" class="room-card">
+                <img src="Images/16.jpg" alt="Room 1">
+                <div class="room-info">
+                    <h2>ROOM 1</h2>
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+                    <p>Double Room with Roof Bed</p>
+                    <h3>3000 LKR <span>per night</span></h3>
+                </div>
+            </a>
+
+            <a href="guestdata.html" class="room-card">
+                <img src="Images/17.jpg" alt="Room 2">
+                <div class="room-info">
+                    <h2>ROOM 2</h2>
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+                    <p>Double Room with Roof Bed</p>
+                    <h3>4000 LKR <span>per night</span></h3>
+                </div>
+            </a>
+
+            <a href="guestdata.html" class="room-card">
+                <img src="Images/18.jpg" alt="Room 3">
+                <div class="room-info">
+                    <h2>ROOM 3</h2>
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+                    <p>Double Room with Kitchen</p>
+                    <h3>5500 LKR <span>per night</span></h3>
+                </div>
+            </a>
+
+            <a href="guestdata.html" class="room-card">
+                <img src="Images/19.jpg" alt="Full Villa">
+                <div class="room-info">
+                    <h2>Full Villa</h2>
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+                    <p>All Three Rooms with the Kitchen</p>
+                    <h3>15000 LKR <span>per night</span></h3>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* General Styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background-color: #f9f9f9;
+        color: #333;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    /* Section Heading */
+    .section-heading h1 {
+        font-size: 40px;
+        color: #222;
+        text-transform: uppercase;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+        color: #007bff;
+        margin: 10px 0;
+    }
+
+    .section-heading p {
+        font-size: 16px;
+        color: #555;
+        margin-bottom: 30px;
+    }
+
+    /* Rooms Grid */
+    .rooms-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .room-card {
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .room-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .room-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .room-info {
+        padding: 15px;
+    }
+
+    .room-info h2 {
+        font-size: 22px;
+        color: #333;
+    }
+
+    .rating {
+        font-size: 20px;
+        color: #ffcc00;
+        margin: 5px 0;
+    }
+
+    .room-info p {
+        font-size: 14px;
+        color: #555;
+        margin: 10px 0;
+    }
+
+    .room-info h3 {
+        font-size: 18px;
+        color: #007bff;
+        margin-top: 10px;
+    }
+
+    .room-info span {
+        font-size: 14px;
+        color: #777;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .rooms-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+
+<script> 
+    $('.owl-carousel').owlCarousel({
+       loop:true,
+       margin:40,
+       nav:true,
+       dots:false,
+       navText: ["<li class= 'fa fa-chevron-left'></li>","<i class = 'fa fa-chevron-right'></i>"],
+       responsive:{
+           0:{
+               items:1
+           },
+           768:{
+               items:2,
+               margin:10,
+           },
+           1000:{
+               items:3
+           }
+       }
+   })
+   </script>
+
+
+<!-- <section class="gallery">
+    <div class="container top">
+        <div class="heading">
+            <h1>PHOTOS</h1>
+            <h2>Our Gallery</h2>
+            <p>Here are some splendid photographs of our place and the fascinating view.</p>
+        </div>
+    </div>
+        <div calss="content mtop">
+            <div class="owl-carousel owl-carousel owl-theme">
+             <div class="items">
+                <div class="img">
+                    <img src="Images/1.jpg" alt="">
+                </div>
+                <div class="overlay">
+                <span class="fa fa-plus"></span>
+                
+                </div>
+             </div>
+             <div class="items">
+                <div class="img">
+                    <img src="Images/2.jpg" alt="">
+                </div>
+                <div class="overlay">
+                <span class="fa fa-plus"></span>
+                
+                </div>
+             </div>
+             <div class="items">
+                <div class="img">
+                    <img src="Images/3.jpg" alt="">
+                </div>
+                <div class="overlay">
+                <span class="fa fa-plus"></span>
+                
+                </div>
+             </div>
+             <div class="items">
+                <div class="img">
+                    <img src="Images/4.jpg" alt="">
+                </div>
+                <div class="overlay">
+                <span class="fa fa-plus"></span>
+                
+                </div>
+             </div>
+             <div class="items">
+                <div class="img">
+                    <img src="Images/5.jpg" alt="">
+                </div>
+                <div class="overlay">
+                <span class="fa fa-plus"></span>
+                
+                </div>
+             </div>
+             <div class="items">
+                <div class="img">
+                    <img src="Images/6.jpg" alt="">
+                </div>
+                <div class="overlay">
+                <span class="fa fa-plus"></span>
+                
+                </div>
+             </div>
+             <div class="items">
+                <div class="img">
+                    <img src="Images/7.jpg" alt="">
+                </div>
+                <div class="overlay">
+                <span class="fa fa-plus"></span>
+                
+                </div>
+             </div>
+             <div class="items">
+                <div class="img">
+                    <img src="Images/8.jpg" alt="">
+                </div>
+                <div class="overlay">
+                <span class="fa fa-plus"></span>
+                
+                </div>
+             </div>
+             <div class="items">
+                <div class="img">
+                    <img src="Images/9.jpg" alt="">
+                </div>
+                <div class="overlay">
+                <span class="fa fa-plus"></span>
+                
+                </div>
+             </div>
+             <div class="items">
+                <div class="img">
+                    <img src="Images/10.jpg" alt="">
+                </div>
+                <div class="overlay">
+                <span class="fa fa-plus"></span>
+                
+                </div>
+             </div>
+             <div class="items">
+                <div class="img">
+                    <img src="Images/11.jpg" alt="">
+                </div>
+                <div class="overlay">
+                <span class="fa fa-plus"></span>
+                
+                </div>
+            </div>
+            <div class="items">
+                <div class="img">
+                    <img src="Images/12.jpg" alt="">
+                </div>
+                <div class="overlay">
+                <span class="fa fa-plus"></span>
+                
+                </div>
+            </div>
+            <div class="items">
+            <div class="img">
+                <img src="Images/13.jpg" alt="">
+            </div>
+            <div class="overlay">
+            <span class="fa fa-plus"></span>
+            
+            </div>
+            </div>
+            <div class="items">
+                <div class="img">
+                    <img src="Images/14.jpg" alt="">
+                </div>
+                <div class="overlay">
+                <span class="fa fa-plus"></span>
+                
+                </div>
+            </div>
+                <div class="items">
+                    <div class="img">
+                        <img src="Images/15.jpg" alt="">
+                    </div>
+                    <div class="overlay">
+                    <span class="fa fa-plus"></span>
+                    
+                    </div>
+                </div>
+            </div>
+</section> -->
+<!-- <script> 
+    $('.owl-carousel').owlCarousel({
+       loop:true,
+       margin:0,
+       nav:true,
+       dots:false,
+       autoplay:true,
+       autoplayTimeout:1000,
+       autoplayHoverpause:true,
+       navText: ["<li class= 'fa fa-chevron-left'></li>", "<i class = 'fa fa-chevron-right'></i>"],
+       responsive:{
+           0:{
+               items:1
+           },
+           768:{
+               items:4,
+               
+           },
+           1000:{
+               items:5
+           }
+       }
+   })
+   </script> -->
+   <section class="services top">
+    <div class="container">
+        <div class="section-heading">
+            <h1>SERVICES</h1>
+            <h2>Our Services</h2>
+            <p>From the moment you arrive to the day you depart, our guest house services are designed to make you feel like family and create unforgettable memories.</p>
+        </div>
+
+        <div class="services-content">
+            <div class="service-cards">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-champagne-glasses"></i>
+                    </div>
+                    <div class="service-details">
+                        <h3>Delicious Food</h3>
+                        <p>Indulge in a variety of exquisite dishes prepared fresh daily.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-spa"></i>
+                    </div>
+                    <div class="service-details">
+                        <h3>River View</h3>
+                        <p>Relax and unwind with a stunning river view from our property.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <div class="service-details">
+                        <h3>Inhouse Restaurant</h3>
+                        <p>Enjoy a comfortable dining experience with our in-house restaurant.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-person-biking"></i>
+                    </div>
+                    <div class="service-details">
+                        <h3>Bicycle Rental Service</h3>
+                        <p>Explore the surroundings on two wheels with our bike rental service.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-image">
+                <img src="Images/13.jpg" alt="Guest House Services" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* General Styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        background-color: #f9f9f9;
+        color: #333;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 50px 0;
+    }
+
+    /* Section Heading */
+    .section-heading {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .section-heading h1 {
+        font-size: 36px;
+        color: #333;
+        font-weight: bold;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+        color: #007bff;
+        margin: 10px 0;
+    }
+
+    .section-heading p {
+        font-size: 16px;
+        color: #555;
+        margin-top: 10px;
+    }
+
+    /* Services Content */
+    .services-content {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .service-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        width: 60%;
+    }
+
+    .service-card {
+        background-color: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .service-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Remove background shape and improve icon appearance */
+    .service-icon {
+        font-size: 40px;
+        color: #007bff; /* Use a modern, clean color */
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    .service-details h3 {
+        font-size: 20px;
+        color: #333;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .service-details p {
+        font-size: 14px;
+        color: #777;
+        margin-top: 10px;
+    }
+
+    .service-image img {
+        max-width: 100%;
+        border-radius: 12px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .services-content {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .service-cards {
+            width: 100%;
+        }
+    }
+</style>
+
+
+
+<!-- <section class="customer top">
+    <div class="container">
+        <div class="owl-carousel owl-carousel2 owl-theme">
+            <div class="items">
+                <i class="fa-solid fa-quote-right"></i>
+                <p>Highly recommended this place.Our stay here was fantastic. The room was the cleanest we had in Sri Lanka so far. We asked the lovely owner to organize a train ticket to Ella last minute and he managed it although the train was fully booked online.
+                    We definitely would book this place again.</p>
+                <h3>Carina</h3>
+                <label>from <b>Germony</b></label>
+            </div>
+            <div class="items">
+            <i class="fa-solid fa-quote-right"></i>
+            <p>Lovely, Welcoming, Clean.The staff were really lovely and attentive. The place was immaculate. It was a good location and away from the hustle and bustle but close enough to the centre you could easily walk in around 5-10 mins.For the price you pay you couldn’t really expect anything more.</p>
+            <h3>Victoria</h3>
+            <label>from <b>United Kingdom</b></label>
+            </div>
+            <div class="items">
+        <i class="fa-solid fa-quote-right"></i>
+        <p>Perfect stay in Kandy town area.We only stayed one night but the accommodation was excellent.The room and bathroom were really clean and had everything we needed. The room was bigger than expected and we really enjoyed the view! Shani and her family were very kind and helpful. We needed to arrange transport to our next destination and they kindly helped us with this. There is a shortcut to the centre of Kandy which didn’t take long and tuk tuks were easy to get to and from.</p>
+        <h3>Karmen</h3>
+        <label>from <b>United Kingdom</b></label>
+            </div>
+        </div>
+    </div>
+</section> -->
+<script> 
+    $('.owl-carousel').owlCarousel({
+       loop:true,
+       margin:0,
+       nav:false,
+       dots:true,
+       responsive:{
+           0:{
+               items:1
+           },
+           768:{
+               items:1,
+               
+           },
+           1000:{
+               items:1
+           }
+       }
+   })
+</script>
+<section class="news-section">
+    <div class="container">
+        <div class="section-heading">
+            <h1>NEWS</h1>
+            <h2>Latest Updates</h2>
+        </div>
+
+        <div class="news-content">
+            <!-- Left Side: Main News Articles -->
+            <div class="news-grid">
+                <article class="news-item">
+                    <div class="news-image">
+                        <img src="Images/9.jpg" alt="Heaven in the Kandy">
+                    </div>
+                    <div class="news-text">
+                        <h2>Heaven in the Kandy</h2>
+                        <div class="news-meta">
+                            <span><i class="fa fa-user"></i> 11K</span>
+                            <span><i class="fa fa-heart"></i> 7.2K</span>
+                            <span><i class="fa fa-comments"></i> 1.5K</span>
+                        </div>
+                        <p class="author">By Jonny</p>
+                    </div>
+                </article>
+
+                <article class="news-item">
+                    <div class="news-image">
+                        <img src="Images/3.jpg" alt="Chilling with the River View">
+                    </div>
+                    <div class="news-text">
+                        <h2>Chilling with the River View</h2>
+                        <div class="news-meta">
+                            <span><i class="fa fa-user"></i> 7.1K</span>
+                            <span><i class="fa fa-heart"></i> 2.7K</span>
+                            <span><i class="fa fa-comments"></i> 1.5K</span>
+                        </div>
+                        <p class="author">By JBrothers</p>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Right Side: Featured Stories -->
+            <aside class="featured-news">
+                <div class="featured-item">
+                    <img src="Images/3.jpg" alt="Best Destination">
+                    <div class="featured-text">
+                        <h2>SR - One of the Best Destinations</h2>
+                        <p>Daily News</p>
+                    </div>
+                </div>
+
+                <div class="featured-item">
+                    <img src="Images/1.jpg" alt="Top Rated Guest House">
+                    <div class="featured-text">
+                        <h2>Top Rated Guest House</h2>
+                        <p>KMC</p>
+                    </div>
+                </div>
+
+                <div class="featured-item">
+                    <img src="Images/2.jpg" alt="Grade 2-i Guest House">
+                    <div class="featured-text">
+                        <h2>Grade 2-i Guest House</h2>
+                        <p>SLCHAR 2022</p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* General Styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 40px 0;
+    }
+
+    .section-heading {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .section-heading h1 {
+        font-size: 40px;
+        color: #222;
+    }
+
+    .section-heading h2 {
+        font-size: 24px;
+        color: #555;
+        font-weight: normal;
+    }
+
+    /* Layout */
+    .news-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 30px;
+    }
+
+    /* News Grid (Left Side) */
+    .news-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .news-item {
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .news-item:hover {
+        transform: translateY(-5px);
+    }
+
+    .news-image img {
+        width: 100%;
+        height: auto;
+        border-bottom: 3px solid #007bff;
+    }
+
+    .news-text {
+        padding: 15px;
+    }
+
+    .news-text h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    .news-meta {
+        display: flex;
+        gap: 10px;
+        font-size: 14px;
+        color: #777;
+    }
+
+    .news-meta i {
+        margin-right: 5px;
+        color: #007bff;
+    }
+
+    .author {
+        font-size: 14px;
+        color: #555;
+        margin-top: 8px;
+    }
+
+    /* Featured News (Right Side) */
+    .featured-news {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .featured-item {
+        display: flex;
+        align-items: center;
+        background: white;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .featured-item:hover {
+        transform: translateY(-5px);
+    }
+
+    .featured-item img {
+        width: 80px;
+        height: 80px;
+        border-radius: 10px;
+        margin-right: 15px;
+    }
+
+    .featured-text h2 {
+        font-size: 18px;
+        color: #333;
+    }
+
+    .featured-text p {
+        font-size: 14px;
+        color: #777;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .news-content {
+            grid-template-columns: 1fr;
+        }
+
+        .news-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .featured-news {
+            flex-direction: column;
+        }
+    }
+</style>
+
+<!-- <section class="newsletter mtop" id="newsmtop">
+    <div class="container flex_space">
+        <h1>Subscribe to our Newsletter</h1>
+            <input type="text" placeholder="Your Email">
+            <input type="submit" value="Subscribe">
+    </div>
+</section> -->
+<footer>
+    <div class="container footer-container">
+        <!-- Logo & Social Icons Section -->
+        <div class="footer-box logo-section">
+            <img src="Images/13.jpg" width="30%" alt="Mahawali Villa Logo">
+            <p><i>Best Rate Guarantee</i></p>
+            <div class="footer-icons">
+                <ul class="social-icons list-inline">
+                    <li>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/share/1DsEAJxwqq/">
+                            <span class="fa fa-facebook"></span>
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a target="_blank" rel="noopener noreferrer" href="https://twitter.com">
+                            <span class="fa fa-twitter"></span>
+                        </a>
+                    </li>-->
+                    <li>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/mahawalivilla?igsh=dHltandwOXRvZ2Q5">
+                            <span class="fa fa-instagram"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" rel="noopener noreferrer" href="https://wa.me/c/94721814927">
+                            <span class="fa fa-whatsapp"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Links Section -->
+        <!-- <div class="footer-box links-section">
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="#">Company History</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div> -->
+
+        <!-- Contact Info Section -->
+        <div class="footer-box contact-section">
+            <h3>Contact Us</h3>
+            <p><strong>Mahawali Villa</strong></p>
+            <div class="contact-info">
+                <p><i class="fa fa-location-dot"></i> No 13/5 Gonawaththa, Haragama Gurudeniya, Haragama, Sri Lanka</p>
+                <p><i class="fa fa-phone"></i> +94 721814927</p>
+                <p><i class="fa fa-envelope"></i> mahawalivilla@gmail.com</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+    /* General Footer Styling */
+    footer {
+        background-color: #222;
+        color: #fff;
+        padding: 40px 0;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        max-width: 1200px;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+
+    .footer-box {
+        flex: 1;
+        padding: 15px;
+    }
+
+    .footer-box h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+        color: #fff;
+    }
+
+    /* Logo Section */
+    .logo-section img {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+    .footer-icons {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .social-icons li a {
+        font-size: 24px;
+        color: #fff;
+        transition: color 0.3s ease;
+    }
+
+    .social-icons li a:hover {
+        color: #007bff;
+    }
+
+    .footer-box ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-box ul li {
+        margin-bottom: 10px;
+    }
+
+    .footer-box ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        transition: color 0.3s ease;
+    }
+
+    .footer-box ul li a:hover {
+        color: #007bff;
+    }
+
+    /* Contact Info Section */
+    .contact-info p {
+        font-size: 16px;
+        color: #bbb;
+        margin-bottom: 10px;
+    }
+
+    .contact-info i {
+        margin-right: 10px;
+        color: #007bff;
+    }
+
+    /* Responsive Styling */
+    @media (max-width: 768px) {
+        .footer-container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-box {
+            width: 100%;
+            text-align: center;
+        }
+    }
+</style>
+
+    
+        </footer>
+        <div calss="legal">
+            <p class="containeer"></p>
+        </div>
+  
+
+ 
+<script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

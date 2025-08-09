@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Mahawali Villa</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Full Image Background for About Us */
+        .about-us {
+            position: relative;
+            width: 100%;
+            height: 100vh; /* Full height of the viewport */
+            background: url('Images/3.jpg') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .about-us .content {
+            text-align: center;
+            padding: 20px;
+            max-width: 80%;
+            z-index: 1; /* Make sure text is above the background */
+        }
+
+        .about-us h1 {
+            font-size: 60px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        .about-us h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .about-us p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            line-height: 1.8;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        .about-us .primary-btn {
+            padding: 12px 25px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 30px;
+            transition: background-color 0.3s;
+        }
+
+        .about-us .primary-btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* About Section Content */
+        .about {
+            padding: 50px 0;
+            background-color: #fff; /* Solid color background for About section */
+            color: #333;
+        }
+
+        .about .containeer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .about .left {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .about .heading h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .about-us h1 {
+                font-size: 45px;
+            }
+
+            .about-us h2 {
+                font-size: 24px;
+            }
+
+            .about-us p {
+                font-size: 16px;
+            }
+
+            .about .left {
+                flex: 100%;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Full Image Background for About Us Section -->
+    <section class="about-us">
+        <div class="content">
+            <h1> Mahawali Villa</h1>
+            <h2>Your Perfect Getaway</h2>
+            <p>Mahawali Villa offers you a luxurious stay in the heart of nature. Experience the serene ambiance with eco-friendly accommodations. Enjoy your time with loved ones in a beautiful environment.</p>
+            <button class="primary-btn" onclick="location.href='aboutus.html'">Learn More</button>
+        </div>
+    </section>
+
+    <!-- About Section Content -->
+    <section class="about">
+        <div class="containeer">
+            <div class="left">
+                <div class="heading">
+                    <h1>About Us</h1>
+                </div>
+                <p>Mahawali Villa is a newly built villa that provides accommodations and organizes parties for you. Our villa is 90% built using recycled items and is designed to be nature-friendly. We offer three separate rooms and a fully equipped kitchen. Choose us for the best time with your family, friends, and loved ones!</p>
+            </div>
+
+            <div class="right">
+                <div class="block1"></div>
+                <div class="block2"></div>
+                <div class="block3"></div>
+                <div class="block4"></div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

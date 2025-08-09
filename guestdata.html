@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest Information</title>
+
+    <style>
+        body {
+            background-image: url('Images/3.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+        }
+        .lbls {
+            font-weight: bold;
+            font-size: 17px;
+            color: #1a21e4;
+            display: inline-block;
+            width: 20%;
+        }
+        .fields {
+            display: inline-block;
+            font-size: 17px;
+            width: 50%;
+        }
+        .main {
+            display: flex;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.8); /* Adds transparency for readability */
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        .space {
+            width: 5%;
+            height: 100%;
+            display: inline-block;
+        }
+        .a {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Please fill all the fields</h2>
+    </div>
+    <div class="main">
+        <div class="space"><br></div>
+        <div class="lbls">
+            <label>Customer Name: </label><br><br><br>
+            <label>Country: </label><br><br><br>
+            <label>Address: </label><br><br><br>
+            <label>Nationality: </label><br><br><br>
+            <label>ID No: </label><br><br><br>
+            <label>Contact No: </label><br><br><br>
+            <label>Email: </label><br><br><br>
+            <label>Check-in: </label><br><br><br>
+            <label>Check-out: </label><br><br><br>
+            <label>Persons: </label><br><br><br>
+            <label>Gender: </label><br><br><br>
+        </div>
+        <div class="fields">
+            <form action="http://localhost/mahawalivilla/guestdata.php" method="POST">
+                <input class="a" type="text" name="name" required><br><br><br>
+                <input class="a" type="text" name="country" required><br><br><br>
+                <input class="a" type="text" name="address" required><br><br><br>
+                <input class="a" type="text" name="nationality" required><br><br><br>
+                <input class="a" type="text" name="id" required><br><br><br>
+                <input class="a" type="text" name="contact" required><br><br><br>
+                <input class="a" type="text" name="email" required><br><br><br>
+                <input class="a" type="date" name="Check In" required><br><br><br> <!-- Fix date input -->
+                <input class="a" type="date" name="checkOut" required><br><br><br>
+                <input class="a" type="number" name="Persons" required><br><br><br> <!-- Fix number input -->
+                <input type="radio" name="gender" value="Male" required> Male &nbsp;
+                <input type="radio" name="gender" value="Female"> Female <br><br><br>
+                <button type="submit" name="submit">Proceed</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
